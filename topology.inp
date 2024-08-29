@@ -1,0 +1,91 @@
+* Topology file for CG LIPIDS 
+
+MASS   -1	CHO	59.11    
+MASS   -1	CCO	44.07   
+MASS   -1	PO2	62.97    
+MASS   -1	COH	30.04     
+MASS   -1	MTF	58.05
+MASS   -1	C3M	42.09
+MASS   -1   	D3M	42.09
+MASS   -1   	C2E	29.07
+MASS   -1   	C2M	28.07
+MASS   -1   	C3E	43.09
+
+RESI DOPC          0.00 !
+GROUP              
+ATOM  CHO 	CHO	0.00            
+ATOM  H1   	CCO   	0.00  
+ATOM  PO2  	PO2  	0.00            
+ATOM  H2   	CCO   	0.00  
+ATOM  SA   	COH   	0.00            
+ATOM  SB   	MTF    	0.00  
+ATOM  C1A  	C3M    	0.00  
+ATOM  C2A  	C3M    	0.00            
+ATOM  C3A  	D3M    	0.00  
+ATOM  C4A  	C3M    	0.00            
+ATOM  C5A  	C3M    	0.00  
+ATOM  C6A  	C2E    	0.00            
+ATOM  C1B  	C3M    	0.00  
+ATOM  C2B  	C3M    	0.00            
+ATOM  C3B  	D3M    	0.00
+ATOM  C4B  	C3M    	0.00  
+ATOM  C5B  	C3M    	0.00            
+ATOM  C6B  	C2E     0.00 
+
+BOND CHO H1  H1 PO2  PO2 H2  H2 SA
+BOND H2 SB  SA C1A  C1A C2A  C2A C3A  
+BOND C3A C4A  C4A C5A  C5A C6A  SB C1B
+BOND C1B C2B  C2B C3B  C3B C4B  C4B C5B
+BOND C5B C6B
+
+RESI DMPC          0.00 !
+GROUP              
+ATOM  CHO  	CHO 	0.00            
+ATOM  H1   	CCO  	0.00  
+ATOM  PO2  	PO2   	0.00            
+ATOM  H2   	CCO   	0.00  
+ATOM  SA   	COH   	0.00            
+ATOM  SB   	MTF   	0.00  
+ATOM  C1A  	C3M   	0.00  
+ATOM  C2A  	C3M   	0.00            
+ATOM  C3A  	C3M   	0.00  
+ATOM  C4A  	C2M    	0.00            
+ATOM  C5A  	C2E    	0.00  
+ATOM  C1B  	C3M    	0.00  
+ATOM  C2B  	C3M    	0.00            
+ATOM  C3B  	C3M    	0.00
+ATOM  C4B  	C2M    	0.00  
+ATOM  C5B  	C2E    	0.00            
+
+BOND CHO H1  H1 PO2  PO2 H2  H2 SA
+BOND H2 SB  SA C1A  C1A C2A  C2A C3A  
+BOND C3A C4A  C4A C5A  SB C1B
+BOND C1B C2B  C2B C3B  C3B C4B  C4B C5B
+
+RESI POPC          0.00 !
+GROUP              
+ATOM  CHO  	CHO  	0.00            
+ATOM  H1   	CCO   	0.00  
+ATOM  PO2  	PO2    	0.00            
+ATOM  H2   	CCO   	0.00  
+ATOM  SA   	COH   	0.00            
+ATOM  SB   	MTF    	0.00  
+ATOM  C1A  	C3M    	0.00  
+ATOM  C2A  	C3M    	0.00            
+ATOM  C3A  	D3M    	0.00  
+ATOM  C4A  	C3M    	0.00            
+ATOM  C5A  	C3M    	0.00  
+ATOM  C6A  	C2E    	0.00            
+ATOM  C1B  	C3M    	0.00  
+ATOM  C2B  	C3M    	0.00            
+ATOM  C3B  	C3M    	0.00
+ATOM  C4B  	C3M    	0.00  
+ATOM  C5B  	C3M    	0.00            
+
+BOND CHO H1  H1 PO2  PO2 H2  H2 SA
+BOND H2 SB  SA C1A  C1A C2A  C2A C3A  
+BOND C3A C4A  C4A C5A  C5A C6A  SB C1B
+BOND C1B C2B  C2B C3B  C3B C4B  C4B C5B
+
+END
+
